@@ -1,0 +1,32 @@
+@import "variables";
+.site-header {
+    background: $color1;
+    height: 100px;
+    display: flex;
+    .main-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    .homeButton {
+        color: yellow;
+        font-size: 24px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+    }
+    .menu-menu-1-container {
+        width: 60%;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            height: 100%;
+            align-items: center;
+            a {
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+}
