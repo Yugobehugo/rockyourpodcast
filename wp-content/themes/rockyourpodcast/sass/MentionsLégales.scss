@@ -1,22 +1,60 @@
-@import "variables";
-.mentions-legales {
-    .site-main article {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .entry-content {
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        background: white;
-        justify-content: space-between;
-        border-radius: $radius;
-        box-shadow: $border;
-        padding-left: 3%;
-        padding-right: 3%;
-        h2 {
-            width: 100%;
+        @import "variables";
+        .mentions-legales {
+            .site-main article {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .entry-content {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                background: white;
+                justify-content: space-between;
+                border-radius: $radius;
+                box-shadow: $border;
+                padding-left: 3%;
+                padding-right: 3%;
+                h2 {
+                    width: 100%;
+                }
+                * {
+                    color: $color3;
+                }
+            }
         }
-    }
-}
+        
+        .a-propos {
+            .site-main article {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .entry-content {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                background: white;
+                justify-content: space-between;
+                border-radius: $radius;
+                box-shadow: $border;
+                padding-left: 3%;
+                padding-right: 3%;
+                * {
+                    color: $color3;
+                }
+                h2 {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+                .wp-block-columns {
+                    margin-bottom: 0;
+                    margin-bottom: 20px;
+                }
+                figure {
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }

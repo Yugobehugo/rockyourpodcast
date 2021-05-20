@@ -16,6 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<h1>Blog</h1>
 
 		<?php
 		if ( have_posts() ) :
@@ -27,7 +28,10 @@ get_header();
 				</header>
 				<?php
 			endif;
-
+			?>
+			<div class = "bloc">
+				<div class = "articles">
+			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -48,10 +52,16 @@ get_header();
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
+		?> 
+	</div>	
+	<?php 
+		get_sidebar();
 		?>
+		</div>
+		
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -1,0 +1,79 @@
+@import "variables";
+.formation {
+    article {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .entry-content {
+        width: 1420px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .wp-block-cover img {
+            border-radius: $radius;
+            box-shadow: $border;
+        }
+        .wp-block-cover__inner-container {
+            margin-left: 80px;
+            h2 {
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            p {
+                width: 50%;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+        }
+        .wp-block-columns {
+            width: 100%;
+            border-radius: $radius;
+            box-shadow: $border;
+            margin-top: 20px;
+            background: white;
+            figure {
+                margin: 0;
+                height: 100%;
+                img {
+                    width: 100%;
+                    border-radius: $radius;
+                    height: 100%;
+                }
+            }
+            .formation-colone2 {
+                margin: 0;
+                color: $color3;
+                display: flex;
+                flex-wrap: wrap;
+                h3 {
+                    width: 100%;
+                    padding-left: 25px;
+                }
+                .wp-block-group {
+                    width: 200px;
+                }
+                .formation-grp5img {
+                    width: 100%;
+                    .wp-block-group__inner-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .wp-block-group {
+                            margin-left: 25px;
+                        }
+                    }
+                    p {
+                        margin-top: 0;
+                    }
+                    img {
+                        width: 110px;
+                        height: auto;
+                    }
+                }
+                .wp-block-button {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}

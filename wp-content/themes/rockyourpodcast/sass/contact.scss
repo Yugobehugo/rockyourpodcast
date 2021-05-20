@@ -33,6 +33,12 @@
             border-radius: 5px !important;
             width: 100%;
         }
+        select {
+            border-radius: 5px !important;
+        }
+        .listselect-container .nf-field-element div {
+            background: $color4 !important;
+        }
         textarea {
             background: $color4;
             border-radius: 5px;
@@ -55,6 +61,7 @@
         }
         nf-field {
             width: 100%;
+            border-radius: $radius;
         }
     }
     .blocContactAdditional {
