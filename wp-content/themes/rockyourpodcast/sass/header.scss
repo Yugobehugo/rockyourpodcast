@@ -29,4 +29,64 @@
             }
         }
     }
+    #controle {
+        display: none;
+    }
+    #burger {
+        width: 40px;
+        line-height: 40px;
+        font-size: 30px;
+        border: 2px solid goldenrod;
+        color: goldenrod;
+        text-align: center;
+        border-radius: 5px;
+        display: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 1270px) {
+        .menu-menu-1-container {
+            width: 75%;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        #burger {
+            display: block;
+        }
+        #primary-menu {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: -40px;
+            min-width: 100%;
+            background: #8D1B1B;
+            overflow: hidden;
+            transition: height 1s;
+            height: 200px;
+            z-index: 2;
+            animation-duration: 1s;
+            animation-name: slidein;
+            animation-name: slidein2;
+            animation-iteration-count: 1;
+        }
+        @keyframes slidein {
+            from {
+                height: 0;
+            }
+            to {
+                height: 200;
+            }
+        }
+        @keyframes slidein2 {
+            from {
+                height: 200;
+            }
+            to {
+                height: 0;
+            }
+        }
+        // #controle:checked+#primary-menu {
+        //     height: 190px !important;
+        // }
+    }
 }

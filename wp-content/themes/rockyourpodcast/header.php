@@ -47,7 +47,12 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<a class = "homeButton" href="Accueil">RockYourPodcast</a>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rockyourpodcast' ); ?></button>
+			<div id="controle2">
+			<label for="controle" id="burger">&#9776;</label> 
+			 <!--Pour le menu burger -->
+			<input onclick="myfunction()" type="checkbox" id="controle">
+			</div>
+			<p id = "ptest"></p>
 			<?php
 			wp_nav_menu(
 				array(

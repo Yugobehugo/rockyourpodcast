@@ -30,4 +30,28 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    @media screen and (max-width: 720px) {
+        .site-footer {
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+        .site-info {
+            flex-wrap: wrap;
+            height: 40px;
+            align-items: center;
+            span {
+                height: 20px;
+            }
+            p {
+                width: 100vw;
+                text-align: center;
+                display: block;
+                margin-top: 15px;
+            }
+            .sep1 {
+                display: none;
+            }
+        }
+    }
 }
