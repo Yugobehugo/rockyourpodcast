@@ -48,10 +48,13 @@
                 flex-wrap: wrap;
                 h3 {
                     width: 100%;
-                    padding-left: 25px;
+                    padding-left: 8%;
+                    display: flex;
+                    align-items: center;
                 }
                 .wp-block-group {
                     width: 200px;
+                    margin: 0;
                 }
                 .formation-grp5img {
                     width: 100%;
@@ -59,7 +62,7 @@
                         display: flex;
                         flex-wrap: wrap;
                         .wp-block-group {
-                            margin-left: 25px;
+                            margin-left: 8%;
                         }
                     }
                     p {
@@ -70,8 +73,8 @@
                         height: auto;
                     }
                 }
-                .wp-block-button {
-                    margin-left: 25px;
+                .wp-block-buttons {
+                    margin-left: 8%;
                 }
             }
         }
