@@ -11,13 +11,27 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+	<h1>Blog</h1>
+
+	<div class="bloc">
+	<div class="content-article">
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
+			?>
+			<div class="card-post">
+				<div class="card-post-img">
+					<?php rockyourpodcast_post_thumbnail(); ?>
+				</div>
+				<div class="card-post-content">
+					<h2><?php the_title(); ?></h2>
+					<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
+					<p> <?php the_content(); ?></p>
+				</div>
+			</div>
+			<div class="content-article-footer">
+			<?php
 			the_post_navigation(
 				array(
 					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'rockyourpodcast' ) . '</span> <span class="nav-title">%title</span>',
@@ -32,9 +46,17 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
-	</main><!-- #main -->
-
+		</div>
+</div>
+	
 <?php
 get_sidebar();
+?>
+
+	</div>
+
+</main><!-- #main -->
+
+<?php
+
 get_footer();

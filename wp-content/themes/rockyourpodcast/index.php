@@ -39,18 +39,18 @@ get_header();
 				} ?>
 				
 					<div class="card-article-img">
-					<?php rockyourpodcast_post_thumbnail(); ?>
+						<?php rockyourpodcast_post_thumbnail(); ?>
 					</div>
 					<hr>
 					<div class="card-article-content">
 						<a class = "aTitle" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-						<p><?php the_date(); ?></p>
+						<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
 						<p><?php if($i == 1){
 								echo excerpt(40);
 							} else {
 								echo excerpt(20);
 							} ?></p>
-						<a href="<?php the_permalink(); ?>">lire la suite </a>
+						<a href="<?php the_permalink(); ?>">Lire la suite </a>
 					</div>
 				</div>
 				

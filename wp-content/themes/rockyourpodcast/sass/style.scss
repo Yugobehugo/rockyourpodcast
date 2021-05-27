@@ -116,6 +116,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "footer";
 @import "contact";
 @import "blog";
+@import "article";
 @import "home";
 @import "MentionsLégales";
 @import "formation";
@@ -135,7 +136,7 @@ h1 {
     color: $color1;
     font-size: $h1;
     width: 100%;
-    width: 72%;
+    width: 1420px;
 }
 
 h2 {

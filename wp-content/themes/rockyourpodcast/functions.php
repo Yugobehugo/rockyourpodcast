@@ -203,3 +203,4 @@ function excerpt($limit) {
 	$content = str_replace(']]>', ']]>', $content);
 	return $content;
   }
+
