@@ -21,39 +21,48 @@ get_header();
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		
 			?>
 			<div class = "bloc">
 				<div class = "articles">
 			<?php
+			$i = 1;
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				<?php if($i == 1){
+					echo "<div class='card-article-large card-article'>";
+				} else {
+					echo "<div class='card-article'>";
+				} ?>
+				
+					<div class="card-article-img">
+					<?php rockyourpodcast_post_thumbnail(); ?>
+					</div>
+					<hr>
+					<div class="card-article-content">
+						<a class = "aTitle" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+						<p><?php the_date(); ?></p>
+						<p><?php if($i == 1){
+								echo excerpt(40);
+							} else {
+								echo excerpt(20);
+							} ?></p>
+						<a href="<?php the_permalink(); ?>">lire la suite </a>
+					</div>
+				</div>
+				
+				<?php $i++; endwhile; ?>
 
-			endwhile;
+			<?php the_posts_navigation(); ?>
 
-			the_posts_navigation();
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?> 
-	</div>	
+				</div>	
+		<?php endif; ?> 
+	
 	<?php 
 		get_sidebar();
 		?>

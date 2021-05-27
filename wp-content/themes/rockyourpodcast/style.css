@@ -1158,7 +1158,7 @@ textarea {
   justify-content: center;
 }
 .blog .site-main .bloc {
-  width: 70%;
+  width: 1420px;
   display: flex;
   justify-content: space-between;
 }
@@ -1215,6 +1215,66 @@ textarea {
 .blog .site-main .bloc .widget-area .widget_text p {
   margin-top: 0;
   color: #6B6B6B;
+}
+.blog .site-main .bloc .articles {
+  width: calc(100% - 380px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog .site-main .bloc .articles .card-article-large {
+  width: 100% !important;
+  display: flex;
+}
+.blog .site-main .bloc .articles .card-article-large .card-article-img {
+  height: 100% !important;
+  min-width: 49%;
+}
+.blog .site-main .bloc .articles .card-article-large .card-article-img img {
+  height: 100% !important;
+}
+.blog .site-main .bloc .articles .card-article {
+  width: 49%;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  background: white;
+  margin-bottom: 20px;
+}
+.blog .site-main .bloc .articles .card-article .card-article-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: calc(100% - 200px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .site-main .bloc .articles .card-article .card-article-content a {
+  color: #15B7B2 !important;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+.blog .site-main .bloc .articles .card-article .card-article-content .aTitle {
+  display: flex;
+  align-self: flex-start;
+}
+.blog .site-main .bloc .articles .card-article .card-article-content h3 {
+  color: #6B6B6B;
+  margin-bottom: 0;
+}
+.blog .site-main .bloc .articles .card-article .card-article-content p {
+  margin-top: 0;
+}
+.blog .site-main .bloc .articles .card-article .card-article-img {
+  height: 200px;
+}
+.blog .site-main .bloc .articles .card-article .card-article-img img {
+  width: 100%;
+  height: 200px;
+  clip-path: 50%;
+}
+.blog .site-main .bloc .articles .card-article hr {
+  background: #15B7B2;
+  margin: 0;
+  height: 2px;
 }
 
 .accueil .entry-header {
@@ -1548,6 +1608,11 @@ h3 {
 p {
   font-size: 16px !important;
   color: #6B6B6B;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .entry-header {

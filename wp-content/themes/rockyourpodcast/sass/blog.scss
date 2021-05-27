@@ -5,7 +5,7 @@
         flex-wrap: wrap;
         justify-content: center;
         .bloc {
-            width: 70%;
+            width: 1420px;
             display: flex;
             justify-content: space-between;
             // La sidebar
@@ -60,6 +60,66 @@
                     p {
                         margin-top: 0;
                         color: $color3;
+                    }
+                }
+            }
+            .articles {
+                width: calc(100% - 380px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .card-article-large {
+                    width: 100% !important;
+                    display: flex;
+                    .card-article-img {
+                        height: 100% !important;
+                        min-width: 49%;
+                        img {
+                            height: 100% !important;
+                        }
+                    }
+                }
+                .card-article {
+                    width: 49%;
+                    box-shadow: $border;
+                    border-radius: $radius;
+                    background: white;
+                    margin-bottom: 20px;
+                    .card-article-content {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        height: calc(100% - 200px);
+                        display: flex;
+                        flex-wrap: wrap;
+                        a {
+                            color: $color1 !important;
+                            align-self: flex-end;
+                            margin-bottom: 15px;
+                        }
+                        .aTitle {
+                            display: flex;
+                            align-self: flex-start;
+                        }
+                        h3 {
+                            color: $color3;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+                    .card-article-img {
+                        height: 200px;
+                        img {
+                            width: 100%;
+                            height: 200px;
+                            clip-path: (50%);
+                        }
+                    }
+                    hr {
+                        background: $color1;
+                        margin: 0;
+                        height: 2px;
                     }
                 }
             }
