@@ -2357,7 +2357,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				( $req ? ' <span class="required">*</span>' : '' )
 			),
 			sprintf(
-				'<input id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
+				'<input placeholder = "  Nom *" id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
 				esc_attr( $commenter['comment_author'] ),
 				$html_req
 			)
@@ -2370,7 +2370,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				( $req ? ' <span class="required">*</span>' : '' )
 			),
 			sprintf(
-				'<input id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
+				'<input placeholder = "  Email *" id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
 				( $html5 ? 'type="email"' : 'type="text"' ),
 				esc_attr( $commenter['comment_author_email'] ),
 				$html_req
@@ -2383,7 +2383,7 @@ function comment_form( $args = array(), $post_id = null ) {
 				__( 'Website' )
 			),
 			sprintf(
-				'<input id="url" name="url" %s value="%s" size="30" maxlength="200" />',
+				'<input placeholder = "  Site web" id="url" name="url" %s value="%s" size="30" maxlength="200" />',
 				( $html5 ? 'type="url"' : 'type="text"' ),
 				esc_attr( $commenter['comment_author_url'] )
 			)
@@ -2477,8 +2477,8 @@ function comment_form( $args = array(), $post_id = null ) {
 		'title_reply'          => __( 'Leave a Reply' ),
 		/* translators: %s: Author of the comment being replied to. */
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
-		'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
-		'title_reply_after'    => '</h3>',
+		'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">',
+		'title_reply_after'    => '</h2>',
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),

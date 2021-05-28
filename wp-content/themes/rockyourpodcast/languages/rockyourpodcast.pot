@@ -53,14 +53,14 @@ msgstr ""
 
 #. translators: 1: title.
 #: comments.php:35
-msgid "One thought on &ldquo;%1$s&rdquo;"
+msgid "Un commentaire sur &ldquo;%1$s&rdquo;"
 msgstr ""
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:41
 msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "%1$s commentaire sur &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s commentaires sur &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 

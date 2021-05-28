@@ -28,17 +28,19 @@ get_header();
 					<h2><?php the_title(); ?></h2>
 					<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
 					<p> <?php the_content(); ?></p>
+					<?php
+						the_post_navigation(
+						array(
+							'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Article précédent:', 'rockyourpodcast' ) . '</span> <span class="nav-title">%title</span>',
+							'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Article suivant:', 'rockyourpodcast' ) . '</span> <span class="nav-title">%title</span>',
+						)
+					); ?>
 				</div>
+
+				
 			</div>
 			<div class="content-article-footer">
 			<?php
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'rockyourpodcast' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'rockyourpodcast' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();

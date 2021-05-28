@@ -67,11 +67,12 @@
                 width: calc(100% - 380px);
                 display: flex;
                 flex-wrap: wrap;
-                background: white;
-                border-radius: $radius;
-                box-shadow: $border;
                 .card-post {
                     width: 100%;
+                    background: white;
+                    border-radius: $radius;
+                    box-shadow: $border;
+                    margin-bottom: 30px;
                 }
                 .card-post-img {
                     height: 500px;
@@ -80,18 +81,98 @@
                         height: 500px;
                         clip-path: (50%);
                         width: 100%;
+                        border-radius: 7px 7px 0 0;
                     }
                 }
                 .card-post-content {
                     padding-left: 50px;
                     padding-right: 50px;
+                    color: $color3;
                     .datePost {
                         font-style: italic;
+                    }
+                    .nav-links span {
+                        color: $color1;
                     }
                 }
                 .content-article-footer {
                     padding-left: 50px;
                     padding-right: 50px;
+                    background: white;
+                    border-radius: $radius;
+                    box-shadow: $border;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    h2 {
+                        color: $color3;
+                    }
+                    a {
+                        color: $color1;
+                    }
+                    textarea {
+                        background: $color4;
+                    }
+                    input {
+                        background: $color4;
+                    }
+                    .form-submit input {
+                        background: $color1;
+                        border: none;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        font-size: 18px;
+                        border-radius: $border;
+                        padding-bottom: 10px;
+                    }
+                    .comment-form-url,
+                    .comment-form-email,
+                    .comment-form-author {
+                        label {
+                            display: none;
+                        }
+                    }
+                    #reply-title {
+                        small {
+                            margin-left: 15px;
+                        }
+                    }
+                    .comment {
+                        margin-bottom: 25px;
+                    }
+                    ol {
+                        list-style: none;
+                        margin-left: 0;
+                        padding-left: 0;
+                        #reply-title {
+                            small {
+                                margin-left: 15px;
+                            }
+                        }
+                        .comment {
+                            margin-bottom: 25px;
+                            border-bottom: solid 2px;
+                            padding-bottom: 20px;
+                            border-color: $color3;
+                            .comment-meta {
+                                display: flex;
+                                height: 60px;
+                                .comment-author {
+                                    display: flex;
+                                    margin-right: 40px;
+                                    img {
+                                        height: 100%;
+                                        width: auto;
+                                        margin-right: 20px;
+                                    }
+                                    span {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
