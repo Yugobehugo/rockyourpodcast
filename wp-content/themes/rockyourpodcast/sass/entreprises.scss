@@ -1,0 +1,54 @@
+    @import "variables";
+    .entreprises {
+        article {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .entry-content {
+            width: 1420px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: white;
+            .wp-block-cover img {
+                border-radius: $radius;
+                box-shadow: $border;
+            }
+            .wp-block-cover {
+                margin-bottom: 40px;
+            }
+            .wp-block-cover__inner-container {
+                margin-left: 80px;
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                }
+                p {
+                    width: 50%;
+                    margin-bottom: 30px;
+                    font-size: 18px;
+                }
+            }
+            .wp-block-columns {
+                display: flex;
+                justify-content: space-evenly;
+                .wp-block-column {
+                    box-shadow: $border;
+                    border-radius: $radius;
+                    margin: 0;
+                    padding: 20px 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .wp-block-buttons {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }

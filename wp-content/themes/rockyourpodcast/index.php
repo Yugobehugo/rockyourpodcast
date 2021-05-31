@@ -33,7 +33,7 @@ get_header();
 				?>
 
 				<?php if($i == 1){
-					echo "<div class='card-article-large card-article'>";
+					echo "<div class='card-article-large '>";
 				} else {
 					echo "<div class='card-article'>";
 				} ?>
