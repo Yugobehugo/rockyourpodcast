@@ -79,6 +79,7 @@
                                                 .card-article-img {
                                                     height: 100%;
                                                     min-width: 49%;
+                                                    display: flex;
                                                     img {
                                                         height: 100%;
                                                         border-radius: 7px 0 0 7px !important;
@@ -124,6 +125,7 @@
                                                 border-radius: $radius;
                                                 background: white;
                                                 margin-bottom: 20px;
+                                                position: relative;
                                                 .card-article-content {
                                                     padding-left: 20px;
                                                     padding-right: 20px;
@@ -161,11 +163,14 @@
                                                         border-radius: 7px 7px 0 0;
                                                         object-fit: cover;
                                                     }
-                                                }
-                                                hr {
-                                                    background: $color1;
-                                                    margin: 0;
-                                                    height: 2px;
+                                                    hr {
+                                                        height: 2px !important;
+                                                        width: 100% !important;
+                                                        bottom: 8px;
+                                                        position: relative;
+                                                        background: $color1;
+                                                        margin-top: 0;
+                                                    }
                                                 }
                                             }
                                         }
@@ -198,9 +203,11 @@
                                     }
                                     .card-article-large {
                                         flex-wrap: wrap;
+                                        position: relative;
                                         .card-article-img {
                                             min-width: 100%;
                                             height: auto !important;
+                                            display: block !important;
                                             img {
                                                 width: 100%;
                                                 height: auto !important;
@@ -209,6 +216,8 @@
                                         hr {
                                             height: 2px !important;
                                             width: 100% !important;
+                                            bottom: 7px;
+                                            position: relative;
                                         }
                                     }
                                     .card-article {

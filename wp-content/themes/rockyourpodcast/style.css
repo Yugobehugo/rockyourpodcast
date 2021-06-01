@@ -1274,6 +1274,7 @@ textarea {
 .blog .site-main .bloc .articles .card-article-large .card-article-img {
   height: 100%;
   min-width: 49%;
+  display: flex;
 }
 .blog .site-main .bloc .articles .card-article-large .card-article-img img {
   height: 100%;
@@ -1318,6 +1319,7 @@ textarea {
   border-radius: 7px;
   background: white;
   margin-bottom: 20px;
+  position: relative;
 }
 .blog .site-main .bloc .articles .card-article .card-article-content {
   padding-left: 20px;
@@ -1357,10 +1359,13 @@ textarea {
   border-radius: 7px 7px 0 0;
   object-fit: cover;
 }
-.blog .site-main .bloc .articles .card-article hr {
+.blog .site-main .bloc .articles .card-article .card-article-img hr {
+  height: 2px !important;
+  width: 100% !important;
+  bottom: 8px;
+  position: relative;
   background: #15B7B2;
-  margin: 0;
-  height: 2px;
+  margin-top: 0;
 }
 @media screen and (max-width: 1000px) {
   .blog .site-main .bloc .widget-area {
@@ -1389,10 +1394,12 @@ textarea {
   }
   .blog .card-article-large {
     flex-wrap: wrap;
+    position: relative;
   }
   .blog .card-article-large .card-article-img {
     min-width: 100%;
     height: auto !important;
+    display: block !important;
   }
   .blog .card-article-large .card-article-img img {
     width: 100%;
@@ -1401,6 +1408,8 @@ textarea {
   .blog .card-article-large hr {
     height: 2px !important;
     width: 100% !important;
+    bottom: 7px;
+    position: relative;
   }
   .blog .card-article {
     width: 100% !important;
@@ -1428,6 +1437,7 @@ textarea {
   width: 1420px;
   display: flex;
   justify-content: space-between;
+  margin: 0 40px 0;
 }
 .single .site-main .bloc .widget-area {
   min-width: 300px;
@@ -1496,18 +1506,17 @@ textarea {
   margin-bottom: 30px;
 }
 .single .site-main .bloc .content-article .card-post-img {
-  height: 500px;
+  height: auto;
   width: 100%;
 }
 .single .site-main .bloc .content-article .card-post-img img {
-  height: 500px;
-  clip-path: 50%;
+  height: auto;
+  max-height: 500px;
   width: 100%;
   border-radius: 7px 7px 0 0;
 }
 .single .site-main .bloc .content-article .card-post-content {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px 0;
   color: #6B6B6B;
 }
 .single .site-main .bloc .content-article .card-post-content .datePost {
@@ -1517,8 +1526,7 @@ textarea {
   color: #15B7B2;
 }
 .single .site-main .bloc .content-article .content-article-footer {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px 0;
   background: white;
   border-radius: 7px;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -1575,6 +1583,7 @@ textarea {
 }
 .single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta {
   display: flex;
+  flex-wrap: wrap;
   height: 60px;
 }
 .single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta .comment-author {
@@ -1588,6 +1597,47 @@ textarea {
 }
 .single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta .comment-author span {
   display: none;
+}
+.single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta .comment-author b {
+  align-items: center;
+  display: flex;
+}
+.single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta .comment-metadata {
+  display: flex;
+  align-items: center;
+}
+.single .site-main .bloc .content-article .content-article-footer ol .comment .comment-meta .comment-metadata a {
+  margin-right: 20px;
+}
+@media screen and (max-width: 850px) {
+  .single .bloc {
+    flex-wrap: wrap;
+  }
+  .single .bloc .content-article {
+    width: 100% !important;
+  }
+  .single .bloc .widget-area {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .single .bloc .comment-meta {
+    flex-wrap: wrap;
+  }
+  .single .bloc .comment-metadata {
+    margin-top: 10px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 450px) {
+  .single .bloc {
+    margin: 0 20px 0 !important;
+  }
+  .single .card-post-content {
+    padding: 0 20px 0 !important;
+  }
+  .single .content-article-footer {
+    padding: 0 20px 0 !important;
+  }
 }
 
 .accueil .entry-header {
@@ -1702,7 +1752,7 @@ textarea {
   flex-wrap: wrap;
 }
 .a-propos .entry-content {
-  width: 70%;
+  width: 1420px;
   display: flex;
   flex-wrap: wrap;
   background: white;
@@ -1711,6 +1761,7 @@ textarea {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   padding-left: 3%;
   padding-right: 3%;
+  margin: 0 40px 0;
 }
 .a-propos .entry-content * {
   color: #6B6B6B;
@@ -1718,6 +1769,9 @@ textarea {
 .a-propos .entry-content h2 {
   width: 100%;
   margin-top: 50px;
+}
+.a-propos .entry-content p {
+  float: left;
 }
 .a-propos .entry-content .wp-block-columns {
   margin-bottom: 0;
@@ -1727,6 +1781,24 @@ textarea {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .a-propos .entry-content .wp-block-column {
+    width: 100% !important;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .a-propos .entry-content .colonnes2 {
+    flex-direction: column !important;
+  }
+  .a-propos .entry-content .wp-block-columns {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 600px) {
+  .a-propos .entry-content {
+    margin: 0 20px 0;
+  }
 }
 
 .formation article {

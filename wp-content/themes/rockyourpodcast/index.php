@@ -40,9 +40,11 @@ get_header();
 				
 					<div class="card-article-img">
 						<?php rockyourpodcast_post_thumbnail(); ?>
+						<hr>
 					</div>
-					<hr>
+					
 					<div class="card-article-content">
+					
 						<a class = "aTitle" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 						<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
 						<p><?php if($i == 1){
