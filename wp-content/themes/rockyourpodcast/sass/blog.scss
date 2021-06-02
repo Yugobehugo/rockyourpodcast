@@ -1,239 +1,239 @@
-                            @import "variables";
-                            .blog {
-                                .site-main {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    justify-content: center;
-                                    .bloc {
-                                        width: 1420px;
-                                        display: flex;
-                                        justify-content: space-between;
-                                        margin: 0 40px 0;
-                                        // La sidebar
-                                        .widget-area {
-                                            min-width: 300px;
-                                            max-width: 300px;
-                                            h2 {
-                                                color: $color3;
-                                                font-size: 24px !important;
-                                            }
-                                            .widget {
-                                                background: white;
-                                                border-radius: $radius;
-                                                box-shadow: $border;
-                                                padding: 15px;
-                                                padding-top: 25px;
-                                                .widget-title {
-                                                    margin-bottom: 0;
-                                                    margin-top: 0;
-                                                }
-                                                ul {
-                                                    list-style: none;
-                                                    margin: 0;
-                                                    padding-left: 0;
-                                                    margin-top: 15px;
-                                                    li {
-                                                        margin-top: 10px;
-                                                        a {
-                                                            color: $color1;
-                                                            text-decoration: none;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            .widget_search {
-                                                padding: 0;
-                                                margin-top: 20px;
-                                                form {
-                                                    border: none;
-                                                    border-radius: $radius;
-                                                    .is-search-icon {
-                                                        background: white;
-                                                        svg path {
-                                                            fill: $color1;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            .widget_text {
-                                                padding: 15px;
-                                                padding-top: 25px;
-                                                p {
-                                                    margin-top: 0;
-                                                    color: $color3;
-                                                }
-                                            }
-                                        }
-                                        .articles {
-                                            width: calc(100% - 380px);
-                                            display: flex;
-                                            flex-wrap: wrap;
-                                            justify-content: space-between;
-                                            .card-article-large {
-                                                min-width: 100% !important;
-                                                display: flex;
-                                                box-shadow: $border;
-                                                border-radius: $radius;
-                                                background: white;
-                                                margin-bottom: 20px;
-                                                .card-article-img {
-                                                    height: 100%;
-                                                    min-width: 49%;
-                                                    display: flex;
-                                                    img {
-                                                        height: 100%;
-                                                        border-radius: 7px 0 0 7px !important;
-                                                        object-fit: cover;
-                                                    }
-                                                }
-                                                .card-article-content {
-                                                    padding-left: 20px;
-                                                    padding-right: 20px;
-                                                    a {
-                                                        color: $color1 !important;
-                                                        align-self: flex-end !important;
-                                                        margin-bottom: 15px !important;
-                                                    }
-                                                    .aTitle {
-                                                        display: flex;
-                                                        align-self: flex-start;
-                                                    }
-                                                    h3 {
-                                                        color: $color3;
-                                                        margin-bottom: 0;
-                                                        width: 100%;
-                                                    }
-                                                    h3:hover {
-                                                        color: $color1;
-                                                        transition-duration: 0.3s;
-                                                    }
-                                                    p {
-                                                        margin-top: 0;
-                                                        width: 100%;
-                                                    }
-                                                }
-                                                hr {
-                                                    height: 100%;
-                                                    width: 10px;
-                                                    background: $color1;
-                                                    margin-top: 0;
-                                                }
-                                            }
-                                            .card-article {
-                                                width: 49%;
-                                                box-shadow: $border;
-                                                border-radius: $radius;
-                                                background: white;
-                                                margin-bottom: 20px;
-                                                position: relative;
-                                                .card-article-content {
-                                                    padding-left: 20px;
-                                                    padding-right: 20px;
-                                                    height: calc(100% - 200px);
-                                                    display: flex;
-                                                    flex-wrap: wrap;
-                                                    a {
-                                                        color: $color1 !important;
-                                                        align-self: flex-end;
-                                                        margin-bottom: 15px;
-                                                    }
-                                                    .aTitle {
-                                                        display: flex;
-                                                        align-self: flex-start;
-                                                    }
-                                                    h3 {
-                                                        color: $color3;
-                                                        margin-bottom: 0;
-                                                        width: 100%;
-                                                    }
-                                                    h3:hover {
-                                                        color: $color1;
-                                                        transition-duration: 0.3s;
-                                                    }
-                                                    p {
-                                                        margin-top: 0;
-                                                        width: 100%;
-                                                    }
-                                                }
-                                                .card-article-img {
-                                                    height: 200px;
-                                                    img {
-                                                        width: 100%;
-                                                        height: 200px;
-                                                        border-radius: 7px 7px 0 0;
-                                                        object-fit: cover;
-                                                    }
-                                                    hr {
-                                                        height: 2px !important;
-                                                        width: 100% !important;
-                                                        bottom: 8px;
-                                                        position: relative;
-                                                        background: $color1;
-                                                        margin-top: 0;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                @media screen and (max-width: 1000px) {
-                                    .site-main .bloc .widget-area {
-                                        min-width: 250px;
-                                        max-width: 250px;
-                                    }
-                                    .articles {
-                                        width: calc(100% - 300px) !important;
-                                    }
-                                }
-                                @media screen and (max-width: 850px) {
-                                    .bloc {
-                                        flex-wrap: wrap;
-                                        .articles {
-                                            width: 100% !important;
-                                        }
-                                        .widget-area {
-                                            min-width: 100% !important;
-                                            max-width: 100% !important;
-                                        }
-                                    }
-                                }
-                                @media screen and (max-width: 650px) {
-                                    .bloc {
-                                        margin: 0 20px 0 !important;
-                                    }
-                                    .card-article-large {
-                                        flex-wrap: wrap;
-                                        position: relative;
-                                        .card-article-img {
-                                            min-width: 100%;
-                                            height: auto !important;
-                                            display: block !important;
-                                            img {
-                                                width: 100%;
-                                                height: auto !important;
-                                            }
-                                        }
-                                        hr {
-                                            height: 2px !important;
-                                            width: 100% !important;
-                                            bottom: 7px;
-                                            position: relative;
-                                        }
-                                    }
-                                    .card-article {
-                                        width: 100% !important;
-                                        height: auto;
-                                        .card-article-img {
-                                            min-width: 100%;
-                                            height: auto !important;
-                                            img {
-                                                width: 100%;
-                                                height: auto !important;
-                                            }
-                                        }
-                                        .card-article-content {
-                                            height: auto !important;
-                                        }
-                                    }
-                                }
+@import "variables";
+.blog {
+    .site-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .bloc {
+            width: 1420px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 40px 0;
+            // La sidebar
+            .widget-area {
+                min-width: 300px;
+                max-width: 300px;
+                h2 {
+                    color: $color3;
+                    font-size: 24px !important;
+                }
+                .widget {
+                    background: white;
+                    border-radius: $radius;
+                    box-shadow: $border;
+                    padding: 15px;
+                    padding-top: 25px;
+                    .widget-title {
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding-left: 0;
+                        margin-top: 15px;
+                        li {
+                            margin-top: 10px;
+                            a {
+                                color: $color1;
+                                text-decoration: none;
                             }
+                        }
+                    }
+                }
+                .widget_search {
+                    padding: 0;
+                    margin-top: 20px;
+                    form {
+                        border: none;
+                        border-radius: $radius;
+                        .is-search-icon {
+                            background: white;
+                            svg path {
+                                fill: $color1;
+                            }
+                        }
+                    }
+                }
+                .widget_text {
+                    padding: 15px;
+                    padding-top: 25px;
+                    p {
+                        margin-top: 0;
+                        color: $color3;
+                    }
+                }
+            }
+            .articles {
+                width: calc(100% - 380px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .card-article-large {
+                    min-width: 100% !important;
+                    display: flex;
+                    box-shadow: $border;
+                    border-radius: $radius;
+                    background: white;
+                    margin-bottom: 20px;
+                    .card-article-img {
+                        height: 100%;
+                        min-width: 49%;
+                        display: flex;
+                        img {
+                            height: 100%;
+                            border-radius: 7px 0 0 7px !important;
+                            object-fit: cover;
+                        }
+                    }
+                    .card-article-content {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        a {
+                            color: $color1 !important;
+                            align-self: flex-end !important;
+                            margin-bottom: 15px !important;
+                        }
+                        .aTitle {
+                            display: flex;
+                            align-self: flex-start;
+                        }
+                        h3 {
+                            color: $color3;
+                            margin-bottom: 0;
+                            width: 100%;
+                        }
+                        h3:hover {
+                            color: $color1;
+                            transition-duration: 0.3s;
+                        }
+                        p {
+                            margin-top: 0;
+                            width: 100%;
+                        }
+                    }
+                    hr {
+                        height: 100%;
+                        width: 10px;
+                        background: $color1;
+                        margin-top: 0;
+                    }
+                }
+                .card-article {
+                    width: 49%;
+                    box-shadow: $border;
+                    border-radius: $radius;
+                    background: white;
+                    margin-bottom: 20px;
+                    position: relative;
+                    .card-article-content {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        height: calc(100% - 200px);
+                        display: flex;
+                        flex-wrap: wrap;
+                        a {
+                            color: $color1 !important;
+                            align-self: flex-end;
+                            margin-bottom: 15px;
+                        }
+                        .aTitle {
+                            display: flex;
+                            align-self: flex-start;
+                        }
+                        h3 {
+                            color: $color3;
+                            margin-bottom: 0;
+                            width: 100%;
+                        }
+                        h3:hover {
+                            color: $color1;
+                            transition-duration: 0.3s;
+                        }
+                        p {
+                            margin-top: 0;
+                            width: 100%;
+                        }
+                    }
+                    .card-article-img {
+                        height: 200px;
+                        img {
+                            width: 100%;
+                            height: 200px;
+                            border-radius: 7px 7px 0 0;
+                            object-fit: cover;
+                        }
+                        hr {
+                            height: 2px !important;
+                            width: 100% !important;
+                            bottom: 8px;
+                            position: relative;
+                            background: $color1;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .site-main .bloc .widget-area {
+            min-width: 250px;
+            max-width: 250px;
+        }
+        .articles {
+            width: calc(100% - 300px) !important;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        .bloc {
+            flex-wrap: wrap;
+            .articles {
+                width: 100% !important;
+            }
+            .widget-area {
+                min-width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .bloc {
+            margin: 0 20px 0 !important;
+        }
+        .card-article-large {
+            flex-wrap: wrap;
+            position: relative;
+            .card-article-img {
+                min-width: 100%;
+                height: auto !important;
+                display: block !important;
+                img {
+                    width: 100%;
+                    height: auto !important;
+                }
+            }
+            hr {
+                height: 2px !important;
+                width: 100% !important;
+                bottom: 7px;
+                position: relative;
+            }
+        }
+        .card-article {
+            width: 100% !important;
+            height: auto;
+            .card-article-img {
+                min-width: 100%;
+                height: auto !important;
+                img {
+                    width: 100%;
+                    height: auto !important;
+                }
+            }
+            .card-article-content {
+                height: auto !important;
+            }
+        }
+    }
+}
