@@ -1938,6 +1938,7 @@ textarea {
   flex-wrap: wrap;
 }
 .accompagnement .entry-content {
+  margin: 0 40px 0;
   width: 1420px;
   display: flex;
   flex-wrap: wrap;
@@ -1959,7 +1960,7 @@ textarea {
   margin-bottom: 20px;
 }
 .accompagnement .wp-block-cover__inner-container p {
-  width: 30%;
+  width: 50%;
   margin-bottom: 30px;
 }
 .accompagnement .accompagnement1-colonnes {
@@ -1974,6 +1975,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .accompagnement .accompagnement1-colonnes .wp-block-column p {
   text-align: center;
@@ -1981,6 +1983,7 @@ textarea {
 .accompagnement .accompagnement2 .wp-block-columns {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 .accompagnement .accompagnement2 .colonne1 .wp-block-group {
   border-radius: 7px;
@@ -2014,7 +2017,78 @@ textarea {
   text-align: center;
 }
 .accompagnement .wp-block-buttons {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 780px) {
+  .accompagnement .accompagnement1-colonnes {
+    justify-content: space-between;
+  }
+  .accompagnement .accompagnement2 .wp-block-columns {
+    display: block;
+  }
+  .accompagnement .accompagnement2 .wp-block-columns .wp-block-column {
+    margin: 0 10px 20px;
+  }
+  .accompagnement .accompagnement2 .wp-block-columns .colonne2 {
+    flex-wrap: nowrap;
+    padding: 0;
+    padding: 20px 40px;
+    align-items: center;
+  }
+  .accompagnement .accompagnement2 .wp-block-columns .colonne2 p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .accompagnement .entry-title {
+    margin-left: 20px;
+  }
+  .accompagnement h1 {
+    font-size: 30px;
+  }
+  .accompagnement .entry-content {
+    margin: 0 20px 0;
+  }
+  .accompagnement .entry-content .wp-block-cover__inner-container {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .accompagnement .entry-content .wp-block-cover__inner-container p {
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .accompagnement .entry-content .accompagnement1-colonnes .wp-block-column {
+    margin: 0 10px 20px;
+  }
+  .accompagnement .accompagnement2 .wp-block-group {
+    padding: 0 !important;
+  }
+  .accompagnement .accompagnement2 .wp-block-group .wp-block-group__inner-container {
+    margin: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin-bottom: 20px;
+    padding: 20px 40px !important;
+  }
+  .accompagnement .accompagnement2 .wp-block-group .wp-block-group__inner-container p {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .accompagnement .accompagnement2 .colonne2 {
+    margin: 0 !important;
+    padding: 20px 40px !important;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    margin: 0 10px 20px !important;
+  }
+  .accompagnement .accompagnement2 .colonne2 p {
+    text-align: center !important;
+    width: 100% !important;
+  }
 }
 
 .entreprises article {
@@ -2069,8 +2143,50 @@ textarea {
   margin-bottom: 20px;
 }
 
+.error404 .page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #6B6B6B;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  margin-top: 0;
+}
+.error404 .page-content span {
+  font-size: 86px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.error404 .page-content h2 {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px 0;
+}
+.error404 .page-content .buttonHome {
+  background: #15B7B2;
+  width: 230px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error404 .page-content .buttonHome a {
+  color: white;
+}
+
 * {
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  margin: 0;
 }
 
 body {
