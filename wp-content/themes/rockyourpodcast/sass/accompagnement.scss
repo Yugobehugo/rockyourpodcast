@@ -1,169 +1,170 @@
-                                                    @import "variables";
-                                                    .accompagnement {
-                                                        article {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            flex-wrap: wrap;
-                                                        }
-                                                        .entry-content {
-                                                            margin: 0 40px 0;
-                                                            width: 1420px;
-                                                            display: flex;
-                                                            flex-wrap: wrap;
-                                                            justify-content: space-between;
-                                                            .accompagnement1 {
-                                                                background: white;
-                                                                border-radius: $radius;
-                                                                box-shadow: $border;
-                                                                margin-bottom: 30px;
-                                                            }
-                                                        }
-                                                        .wp-block-cover {
-                                                            margin-bottom: 40px;
-                                                        }
-                                                        .wp-block-cover__inner-container {
-                                                            margin-left: 80px;
-                                                            h2 {
-                                                                margin-bottom: 20px;
-                                                            }
-                                                            p {
-                                                                width: 50%;
-                                                                margin-bottom: 30px;
-                                                            }
-                                                        }
-                                                        .accompagnement1-colonnes {
-                                                            display: flex;
-                                                            justify-content: space-evenly;
-                                                            .wp-block-column {
-                                                                box-shadow: $border;
-                                                                border-radius: $radius;
-                                                                margin: 0;
-                                                                padding: 20px 40px;
-                                                                display: flex;
-                                                                flex-wrap: wrap;
-                                                                justify-content: center;
-                                                                margin-bottom: 20px;
-                                                                p {
-                                                                    text-align: center;
-                                                                }
-                                                            }
-                                                        }
-                                                        .accompagnement2 {
-                                                            .wp-block-columns {
-                                                                display: flex;
-                                                                justify-content: space-evenly;
-                                                                margin-bottom: 40px;
-                                                            }
-                                                            .colonne1 {
-                                                                .wp-block-group {
-                                                                    border-radius: $radius;
-                                                                    box-shadow: $border;
-                                                                    margin: 0;
-                                                                    padding: 20px 40px;
-                                                                    height: 47%;
-                                                                    .wp-block-group__inner-container {
-                                                                        display: flex;
-                                                                        justify-content: space-between;
-                                                                        align-items: center;
-                                                                        p {
-                                                                            text-align: center;
-                                                                            width: 80%;
-                                                                        }
-                                                                    }
-                                                                }
-                                                                .groupe1 {
-                                                                    margin-bottom: 3%;
-                                                                }
-                                                            }
-                                                            .colonne2 {
-                                                                border-radius: $radius;
-                                                                box-shadow: $border;
-                                                                margin: 0;
-                                                                padding: 20px 40px;
-                                                                display: flex;
-                                                                flex-wrap: wrap;
-                                                                justify-content: center;
-                                                                p {
-                                                                    text-align: center;
-                                                                }
-                                                            }
-                                                        }
-                                                        .wp-block-buttons {
-                                                            margin-bottom: 40px;
-                                                        }
-                                                        @media screen and (max-width: 780px) {
-                                                            .accompagnement1-colonnes {
-                                                                justify-content: space-between;
-                                                            }
-                                                            .accompagnement2 .wp-block-columns {
-                                                                display: block;
-                                                                .wp-block-column {
-                                                                    margin: 0 10px 20px;
-                                                                }
-                                                                .colonne2 {
-                                                                    flex-wrap: nowrap;
-                                                                    padding: 0;
-                                                                    padding: 20px 40px;
-                                                                    align-items: center;
-                                                                    p {
-                                                                        width: 80%;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        @media screen and (max-width: 600px) {
-                                                            .entry-title {
-                                                                margin-left: 20px;
-                                                            }
-                                                            h1 {
-                                                                font-size: 30px;
-                                                            }
-                                                            .entry-content {
-                                                                margin: 0 20px 0;
-                                                                .wp-block-cover__inner-container {
-                                                                    justify-content: center;
-                                                                    margin-left: 0;
-                                                                    p {
-                                                                        width: 90%;
-                                                                        margin-bottom: 30px;
-                                                                        font-size: 18px;
-                                                                    }
-                                                                }
-                                                                .accompagnement1-colonnes {
-                                                                    .wp-block-column {
-                                                                        margin: 0 10px 20px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            .accompagnement2 {
-                                                                .wp-block-group {
-                                                                    padding: 0 !important;
-                                                                    .wp-block-group__inner-container {
-                                                                        margin: 0;
-                                                                        display: flex !important;
-                                                                        flex-wrap: wrap;
-                                                                        justify-content: center !important;
-                                                                        margin-bottom: 20px;
-                                                                        padding: 20px 40px !important;
-                                                                        p {
-                                                                            text-align: center !important;
-                                                                            width: 100% !important;
-                                                                        }
-                                                                    }
-                                                                }
-                                                                .colonne2 {
-                                                                    margin: 0 !important;
-                                                                    padding: 20px 40px !important;
-                                                                    display: flex;
-                                                                    flex-wrap: wrap !important;
-                                                                    justify-content: center !important;
-                                                                    margin-bottom: 20px !important;
-                                                                    margin: 0 10px 20px !important;
-                                                                    p {
-                                                                        text-align: center !important;
-                                                                        width: 100% !important;
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
+    @import "variables";
+    .accompagnement {
+        article {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .entry-content {
+            margin: 0 40px 0;
+            width: 1420px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .accompagnement1 {
+                background: white;
+                border-radius: $radius;
+                box-shadow: $border;
+                margin-bottom: 30px;
+            }
+        }
+        .wp-block-cover {
+            margin-bottom: 40px;
+        }
+        .wp-block-cover__inner-container {
+            margin-left: 80px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        .accompagnement1-colonnes {
+            display: flex;
+            justify-content: space-evenly;
+            .wp-block-column {
+                box-shadow: $border;
+                border-radius: $radius;
+                margin: 0;
+                padding: 20px 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 20px;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .accompagnement2 {
+            .wp-block-columns {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 40px;
+            }
+            .colonne1 {
+                .wp-block-group {
+                    border-radius: $radius;
+                    box-shadow: $border;
+                    margin: 0;
+                    padding: 20px 40px;
+                    height: 47%;
+                    .wp-block-group__inner-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p {
+                            text-align: center;
+                            width: 80%;
+                        }
+                    }
+                }
+                .groupe1 {
+                    margin-bottom: 3%;
+                }
+            }
+            .colonne2 {
+                border-radius: $radius;
+                box-shadow: $border;
+                margin: 0;
+                padding: 20px 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .wp-block-buttons {
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 780px) {
+            .accompagnement1-colonnes {
+                justify-content: space-between;
+                padding: 0 15px 0;
+            }
+            .accompagnement2 .wp-block-columns {
+                display: block;
+                .wp-block-column {
+                    margin: 0 10px 20px;
+                }
+                .colonne2 {
+                    flex-wrap: nowrap;
+                    padding: 0;
+                    padding: 20px 40px;
+                    align-items: center;
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .entry-title {
+                margin-left: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .entry-content {
+                margin: 0 20px 0;
+                .wp-block-cover__inner-container {
+                    justify-content: center;
+                    margin-left: 0;
+                    p {
+                        width: 90%;
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                    }
+                }
+                .accompagnement1-colonnes {
+                    .wp-block-column {
+                        margin: 0 10px 20px;
+                    }
+                }
+            }
+            .accompagnement2 {
+                .wp-block-group {
+                    padding: 0 !important;
+                    .wp-block-group__inner-container {
+                        margin: 0;
+                        display: flex !important;
+                        flex-wrap: wrap;
+                        justify-content: center !important;
+                        margin-bottom: 20px;
+                        padding: 20px 40px !important;
+                        p {
+                            text-align: center !important;
+                            width: 100% !important;
+                        }
+                    }
+                }
+                .colonne2 {
+                    margin: 0 !important;
+                    padding: 20px 40px !important;
+                    display: flex;
+                    flex-wrap: wrap !important;
+                    justify-content: center !important;
+                    margin-bottom: 20px !important;
+                    margin: 0 10px 20px !important;
+                    p {
+                        text-align: center !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }

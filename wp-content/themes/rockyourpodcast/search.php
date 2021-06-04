@@ -14,40 +14,65 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+		
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'rockyourpodcast' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Résultats de recherches pour: %s', 'rockyourpodcast' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
-			</header><!-- .page-header -->
+		
 
+				<div class = "bloc">
+				<div class = "articles">
 			<?php
+			$i = 1;
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				?>
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+				<?php if($i == 1){
+					echo "<div class='card-article-large '>";
+				} else {
+					echo "<div class='card-article'>";
+				} ?>
+				
+					<div class="card-article-img">
+						<?php rockyourpodcast_post_thumbnail(); ?>
+						<hr>
+					</div>
+					
+					<div class="card-article-content">
+					
+						<a class = "aTitle" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+						<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
+						<p><?php if($i == 1){
+								echo excerpt(40);
+							} else {
+								echo excerpt(20);
+							} ?></p>
+						<a href="<?php the_permalink(); ?>">Lire la suite </a>
+					</div>
+				</div>
+				
+				<?php $i++; endwhile; ?>
 
-			endwhile;
+			<?php the_posts_navigation(); ?>
 
-			the_posts_navigation();
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+				</div>	
+		<?php endif; ?> 
+	
+	<?php 
+		get_sidebar();
 		?>
+		</div>
+		
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();
