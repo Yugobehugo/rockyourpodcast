@@ -1287,7 +1287,6 @@ textarea {
   border-radius: 7px;
   background: white;
   margin-bottom: 20px;
-  max-height: 338px;
 }
 .blog .site-main .bloc .articles .card-article-large .card-article-img,
 .search .site-main .bloc .articles .card-article-large .card-article-img {
@@ -1305,6 +1304,8 @@ textarea {
 .search .site-main .bloc .articles .card-article-large .card-article-content {
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .blog .site-main .bloc .articles .card-article-large .card-article-content a,
 .search .site-main .bloc .articles .card-article-large .card-article-content a {
@@ -1708,12 +1709,13 @@ textarea {
   font-size: 30px;
 }
 .accueil .entry-content .wp-block-cover__inner-container p {
-  width: 30%;
+  width: 40%;
   margin-bottom: 30px;
   font-size: 18px;
 }
 .accueil .entry-content .home-container {
-  width: 70%;
+  width: 1420px;
+  margin: 0 40px 0;
 }
 .accueil .entry-content .home-container .home-a-propos {
   background: white;
@@ -1724,10 +1726,15 @@ textarea {
   padding-top: 2%;
   margin-top: 50px;
   color: #6B6B6B;
+  max-width: 100%;
 }
 .accueil .entry-content .home-container .home-a-propos a {
   text-decoration: none;
   color: #15B7B2;
+}
+.accueil .entry-content .home-container .home-a-propos img {
+  max-width: 340px;
+  max-height: 340px;
 }
 .accueil .entry-content .home-container .home-accompagnements div {
   display: flex;
@@ -1740,10 +1747,13 @@ textarea {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   margin-top: 50px;
   color: #6B6B6B;
+  padding: 0 7% 0;
 }
 .accueil .entry-content .home-container .home-accompagnements h2 {
   width: 100%;
-  margin-left: 7%;
+}
+.accueil .entry-content .home-container .home-accompagnements .wp-block-group__inner-container {
+  justify-content: space-between;
 }
 .accueil .entry-content .home-container .home-accompagnements .home-accompagnement {
   width: 450px;
@@ -1772,6 +1782,23 @@ textarea {
   display: flex;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 780px) {
+  .accueil .entry-content .wp-block-cover__inner-container {
+    margin-left: 10px;
+  }
+  .accueil .entry-content .wp-block-cover__inner-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .accueil .entry-content .wp-block-cover__inner-container p {
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .accueil .home-container {
+    margin: 0 20px 0 !important;
+  }
 }
 
 .mentions-legales .site-main article {
@@ -2178,6 +2205,7 @@ textarea {
 .entreprises .entry-content .wp-block-columns {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 .entreprises .entry-content .wp-block-columns .wp-block-column {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -2304,6 +2332,14 @@ a {
 
 .entry-footer {
   display: none;
+}
+
+.entry-content {
+  margin-bottom: 40px !important;
+}
+
+article {
+  margin-bottom: 0 !important;
 }
 
 .sfsiplus_footerLnk {

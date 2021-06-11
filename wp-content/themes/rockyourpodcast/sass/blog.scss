@@ -77,7 +77,6 @@
                     border-radius: $radius;
                     background: white;
                     margin-bottom: 20px;
-                    max-height: 338px;
                     .card-article-img {
                         height: 100%;
                         min-width: 49%;
@@ -91,6 +90,8 @@
                     .card-article-content {
                         padding-left: 20px;
                         padding-right: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
                         a {
                             color: $color1 !important;
                             align-self: flex-end !important;
