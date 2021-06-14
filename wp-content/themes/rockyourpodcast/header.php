@@ -44,15 +44,11 @@
 				<p class="site-description"><?php echo $rockyourpodcast_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
+		<a class = "homeButton" href="Accueil">RockYourPodcast</a>
 		<nav id="site-navigation" class="main-navigation">
-			<a class = "homeButton" href="Accueil">RockYourPodcast</a>
-			<div id="controle2">
-			<label for="controle" id="burger">&#9776;</label> 
-			 <!--Pour le menu burger -->
-			<input onclick="myfunction()" type="checkbox" id="controle">
-			</div>
-			<p id = "ptest"></p>
+		<label for="controle" id="burger">☰</label>
+		<input type="checkbox" id="controle">
+		
 			<?php
 			wp_nav_menu(
 				array(

@@ -1,6 +1,11 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -11,41 +16,63 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<h1>Blog <?php get_month_link( $year , $month); ?></h1>
 
-		<?php if ( have_posts() ) : ?>
+		<?php
+		if ( have_posts() ) :
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
+		
+			?>
+			<div class = "bloc">
+				<div class = "articles">
 			<?php
+			$i = 1;
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				<?php if($i == 1){
+					echo "<div class='card-article-large '>";
+				} else {
+					echo "<div class='card-article'>";
+				} ?>
+				
+					<div class="card-article-img">
+						<?php rockyourpodcast_post_thumbnail(); ?>
+						<hr>
+					</div>
+					
+					<div class="card-article-content">
+					
+						<a class = "aTitle" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+						<p class = "datePost"><?php rockyourpodcast_posted_on(); ?></p>
+						<p><?php if($i == 1){
+								echo excerpt(40);
+							} else {
+								echo excerpt(20);
+							} ?></p>
+						<a href="<?php the_permalink(); ?>">Lire la suite </a>
+					</div>
+				</div>
+				
+				<?php $i++; endwhile; ?>
 
-			endwhile;
+			<?php the_posts_navigation(); ?>
 
-			the_posts_navigation();
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+				</div>	
+		<?php endif; ?> 
+	
+	<?php 
+		get_sidebar();
 		?>
+		</div>
+		
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();
