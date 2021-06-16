@@ -972,7 +972,7 @@ textarea {
   .site-header .menu-menu-1-container {
     display: block;
     position: absolute;
-    top: 130px;
+    top: 100px;
     min-width: 100%;
     background: #15B7B2;
     height: 0;
@@ -992,6 +992,11 @@ textarea {
   }
   .site-header #controle:checked + .menu-menu-1-container {
     height: 300px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-header .homeButton {
+    padding-left: 15px;
   }
 }
 
@@ -2029,6 +2034,16 @@ textarea {
     margin-bottom: 30px;
     font-size: 18px;
   }
+  .formation .entry-content .wp-block-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0 !important;
+  }
+  .formation .entry-content .formation-colone2 .wp-block-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
   .formation .entry-content .formation-grp5img .wp-block-group {
     width: 100% !important;
     margin-left: 0 !important;
@@ -2046,11 +2061,6 @@ textarea {
   }
   .formation .entry-content .formation-grp5img .wp-block-group .wp-block-group__inner-container p {
     text-align: center;
-  }
-  .formation .entry-content .wp-block-buttons {
-    width: 100%;
-    justify-content: center;
-    margin-left: 0 !important;
   }
 }
 
@@ -2174,7 +2184,7 @@ textarea {
   }
   .accompagnement .entry-content .wp-block-cover__inner-container {
     justify-content: center;
-    margin-left: 0;
+    margin-left: 10px;
   }
   .accompagnement .entry-content .wp-block-cover__inner-container p {
     width: 90%;

@@ -107,6 +107,18 @@
                                     font-size: 18px;
                                 }
                             }
+                            .wp-block-buttons {
+                                width: 100%;
+                                justify-content: flex-start;
+                                margin-left: 0 !important;
+                            }
+                            .formation-colone2 {
+                                .wp-block-buttons {
+                                    width: 100%;
+                                    justify-content: center;
+                                    margin-left: 0 !important;
+                                }
+                            }
                             .formation-grp5img {
                                 .wp-block-group {
                                     width: 100% !important;
@@ -126,11 +138,6 @@
                                         }
                                     }
                                 }
-                            }
-                            .wp-block-buttons {
-                                width: 100%;
-                                justify-content: center;
-                                margin-left: 0 !important;
                             }
                         }
                     }

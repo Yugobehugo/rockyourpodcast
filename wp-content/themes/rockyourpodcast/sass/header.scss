@@ -58,7 +58,7 @@
         .menu-menu-1-container {
             display: block;
             position: absolute;
-            top: 130px;
+            top: 100px;
             min-width: 100%;
             background: $color1;
             height: 0;
@@ -78,6 +78,11 @@
         }
         #controle:checked+.menu-menu-1-container {
             height: 300px !important;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .homeButton {
+            padding-left: 15px;
         }
     }
 }
