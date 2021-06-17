@@ -1848,6 +1848,9 @@ textarea {
   .accueil .home-container {
     margin: 0 20px 0 !important;
   }
+  .accueil .home-a-propos {
+    display: block;
+  }
 }
 
 .mentions-legales .site-main article {
@@ -2347,8 +2350,13 @@ textarea {
   justify-content: space-evenly;
 }
 
+.Bloc2 {
+  padding-top: 20px;
+}
+
 .Bloc3 {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .wp-block-cover {
@@ -2384,10 +2392,30 @@ textarea {
   text-align: center;
 }
 
+.Bloc5 {
+  background: white;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  margin-top: 50px;
+  color: #6B6B6B;
+  max-width: 100%;
+}
+.Bloc5 a {
+  text-decoration: none;
+  color: #15B7B2;
+}
+.Bloc5 img {
+  max-width: 340px;
+  max-height: 340px;
+}
+
 @media screen and (max-width: 780px) {
   .Bloc2 {
     justify-content: space-between;
-    padding: 0 0px 0 !important;
+    padding: 0 10px 0 !important;
   }
   .Bloc2 .wp-block-column {
     margin-top: 20px !important;
@@ -2408,6 +2436,10 @@ textarea {
   }
   .Bloc3 .colonne2 p {
     width: 80%;
+  }
+
+  .Bloc5 {
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2431,8 +2463,14 @@ textarea {
     margin-bottom: 30px;
     font-size: 18px;
   }
+  .entry-content .Bloc2 {
+    padding: 0 !important;
+  }
   .entry-content .Bloc2 .wp-block-column {
     margin: 0 10px 20px;
+  }
+  .entry-content .Bloc .accompagnement1-colonnes {
+    padding: 0;
   }
 
   .Bloc3 .wp-block-group {
